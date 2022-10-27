@@ -25,7 +25,7 @@ class ConferenceController extends AbstractController
     }
 
     /**
-     * @Route("/conference", name="homepage")
+     * @Route("/", name="homepage")
      */
     public function index(ConferenceRepository $conferenceRepository): Response
     {
