@@ -14,7 +14,7 @@ use Twig\Environment;
 class ConferenceController extends AbstractController
 {
     /**
-     * @Route("/conference", name="app_conference")
+     * @Route("/conference", name="homepage")
      */
     public function index(ConferenceRepository $conferenceRepository): Response
     {
