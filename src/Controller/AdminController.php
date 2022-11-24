@@ -4,12 +4,15 @@ namespace App\Controller;
 
 use App\Entity\Comment;
 use App\Message\CommentMessage;
+use App\Repository\CommentRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Bridge\Twig\Mime\NotificationEmail;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\HttpCache\StoreInterface;
 use Symfony\Component\HttpKernel\KernelInterface;
+use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Messenger\MessageBusInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Workflow\Registry;
